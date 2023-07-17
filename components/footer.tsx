@@ -1,7 +1,5 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
 import { Box, Link } from "@mui/material";
-import EmailIcon from "@mui/icons-material/Email";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -13,7 +11,6 @@ const Footer = () => {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "rgba(255, 255, 255, 0.8)",
-        // position: "fixed",
         bottom: 0,
         left: 0,
         width: "100%",
@@ -22,26 +19,31 @@ const Footer = () => {
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Glassmorphic shadow
       }}
     >
-      <Typography variant="body1" color="black" sx={{ mx: 2 }}>
-        @danishsadpara
-      </Typography>
-      <Box sx={{ flexGrow: 1 }} /> {/* Empty box for flexible spacing */}
-      <Link href="mailto:example@example.com" sx={{ mx: 2 }}>
-        <EmailIcon />
-      </Link>
+      <Box sx={{ flexGrow: 1 }} />
+
       <Link
-        href="https://www.instagram.com/example"
+        href="https://www.instagram.com/danishsadpara"
         target="_blank"
         rel="noopener"
-        sx={{ mx: 2 }}
+        sx={{
+          mx: 2,
+          "& svg": {
+            color: "#C13584", // Instagram logo color
+          },
+        }}
       >
         <InstagramIcon />
       </Link>
       <Link
-        href="https://github.com/example"
+        href="https://github.com/danishsadpara"
         target="_blank"
         rel="noopener"
-        sx={{ mx: 2 }}
+        sx={{
+          mx: 2,
+          "& svg": {
+            color: "#211F1F", // GitHub logo color
+          },
+        }}
       >
         <GitHubIcon />
       </Link>

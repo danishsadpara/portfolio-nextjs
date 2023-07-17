@@ -10,7 +10,7 @@ const Career = () => {
       <Grid item xs={12} textAlign="center">
         <Chip label="Career" />
 
-        <Typography variant="h3" fontWeight="bold" my={1}>
+        <Typography variant="h3" fontWeight="bold" mt={2}>
           Education & Experience
         </Typography>
       </Grid>

@@ -19,18 +19,22 @@ const Index = () => {
     }
   }, [isLoading, user, router]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <>
+    <Box m={5}>
       <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-around",
-          alignItems: "center",
-          flexDirection: "row",
-          height: "100vh",
-        }}
+        display="flex"
+        justifyContent="space-around"
+        alignItems="center"
+        height="100vh"
       >
-        <Box sx={{ textAlign: "start" }}>
+        <Box textAlign="start">
           <Chip label="Hi! I am" size="small" />
           <Typography variant="h2" fontWeight="bold">
             M Murtaza Danish
@@ -38,26 +42,23 @@ const Index = () => {
           <Typography variant="caption" sx={{ color: "darkcyan" }}>
             MERN stack developer
           </Typography>
-          <Box mt={2}>
+          <Stack direction="row" spacing={2} mt={2}>
             <Button variant="outlined" sx={{ borderRadius: "50px" }}>
               Contact me
             </Button>
-            <Button
-              variant="contained"
-              sx={{ borderRadius: "50px", ml: "20px" }}
-            >
+            <Button variant="contained" sx={{ borderRadius: "50px" }}>
               Download CV
             </Button>
-          </Box>
+          </Stack>
         </Box>
-        <Box style={{ position: "relative" }}>
+        <Box position="relative">
           <Box
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "450px",
-              height: "485px",
+            position="absolute"
+            top={0}
+            left={0}
+            width="450px"
+            height="485px"
+            sx={{
               backgroundImage: `url('/smain.png')`,
               backgroundSize: "cover",
             }}
@@ -89,27 +90,14 @@ const Index = () => {
           </Grid>
         ))}
       </Grid>
-      <Box
-        display="flex"
-        justifyContent="space-around"
-        alignItems="center"
-        sx={{ borderRadius: 3, m: 10, py: 5 }}
-      >
-        {[1, 2, 3].map((item) => (
-          <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-            key={item}
-          >
-            <Typography variant="h3" fontWeight="bold">
-              Demo
-            </Typography>
-            <Typography variant="caption">sub-demo</Typography>
-          </Box>
-        ))}
-      </Box>
+      <Stack textAlign="center" mt={10}>
+        <Box py={5}>
+          <Typography variant="h3" fontWeight="bold">
+            Demo
+          </Typography>
+          <Typography variant="caption">sub-demo</Typography>
+        </Box>
+      </Stack>
       <Stack alignItems="center" mt={10}>
         <Career />
       </Stack>
@@ -122,17 +110,17 @@ const Index = () => {
       <Stack alignItems="center" mt={10}>
         <ContactUsPage />
       </Stack>
-
-      <Stack alignItems="center" mt={5}>
+      <Stack alignItems="flex-end" mt={10}>
         <Button
           variant="outlined"
           sx={{ borderRadius: "10px" }}
-          startIcon={<KeyboardArrowUpIcon />}
+          endIcon={<KeyboardArrowUpIcon />}
+          onClick={scrollToTop}
         >
           Back to the top
         </Button>
       </Stack>
-    </>
+    </Box>
   );
 };
 

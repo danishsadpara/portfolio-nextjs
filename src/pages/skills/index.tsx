@@ -13,7 +13,7 @@ const Skills = () => {
     <Grid container spacing={5} textAlign="center">
       <Grid item xs={12} textAlign="center">
         <Chip label="Skills | Tools" />
-        <Typography variant="h3" fontWeight="bold" my={1}>
+        <Typography variant="h3" fontWeight="bold" mt={2}>
           Technologies and Skills
         </Typography>
       </Grid>

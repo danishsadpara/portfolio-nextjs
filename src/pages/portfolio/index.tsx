@@ -16,7 +16,7 @@ const Portfolio = () => {
     <Grid container display="flex" justifyContent="center" alignItems="center">
       <Grid item xs={12} textAlign="center">
         <Chip label="Portfolio" />
-        <Typography variant="h3" fontWeight="bolder" my={1}>
+        <Typography variant="h3" fontWeight="bolder" mt={2}>
           Works and projects
         </Typography>
       </Grid>

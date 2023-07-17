@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-import { Card, CardActions, CardContent } from "@mui/material";
+import { Box, CardActions, CardContent } from "@mui/material";
 import { IData } from "../../utils/interface";
 
 interface Props {
@@ -11,9 +11,18 @@ const ProfessionalCard = ({ data }: Props) => {
   const { title, description, duration, degree } = data;
 
   return (
-    <Card>
+    <Box
+      border={0.5}
+      borderRadius={3}
+      borderColor="lightblue"
+      sx={{
+        "&:hover": {
+          bgcolor: "#ECF9FF",
+        },
+      }}
+    >
       <CardContent>
-        <Typography variant="h6" fontWeight="bold" component="div" mb={2}>
+        <Typography variant="h6" fontWeight="bold" component="div">
           {title}
         </Typography>
         <Typography color="text.secondary">{description}</Typography>
@@ -30,7 +39,7 @@ const ProfessionalCard = ({ data }: Props) => {
           {duration ? duration : degree}
         </Typography>
       </CardActions>
-    </Card>
+    </Box>
   );
 };
 
