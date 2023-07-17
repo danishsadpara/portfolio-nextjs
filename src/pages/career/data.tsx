@@ -1,15 +1,15 @@
 const professionalData = [
   {
-    title: "Front-end",
+    title: "Pixako Technologies",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, possimus excepturi. Delectus officia praesentium rem?",
-    duration: "2 months",
+    duration: "Present",
   },
   {
-    title: "Front-end",
+    title: "Softify",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, possimus excepturi. Delectus officia praesentium rem?",
-    duration: "6 months",
+    duration: "4 months",
   },
 ];
 const academicData = [
@@ -17,13 +17,13 @@ const academicData = [
     title: "Fuuast ISB",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, possimus excepturi. Delectus officia praesentium rem?",
-    duration: "BsCs",
+    duration: "Bachlors of Computer Science",
   },
   {
     title: "Midcity Educators",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, possimus excepturi. Delectus officia praesentium rem?",
-    duration: "2 years",
+    duration: "Intermediate Computer Science",
   },
 ];
 export { professionalData, academicData };

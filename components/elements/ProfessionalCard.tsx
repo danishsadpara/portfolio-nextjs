@@ -11,7 +11,7 @@ const ProfessionalCard = ({ data }: Props) => {
   const { title, description, duration, degree } = data;
 
   return (
-    <Card className="professional-card" sx={{ bgcolor: "#E2F4EC" }}>
+    <Card>
       <CardContent>
         <Typography variant="h6" fontWeight="bold" component="div" mb={2}>
           {title}

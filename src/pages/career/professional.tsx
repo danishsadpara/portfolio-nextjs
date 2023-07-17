@@ -4,12 +4,6 @@ import { Box, Grid } from "@mui/material";
 import ProfessionalCard from "../../../components/elements/ProfessionalCard";
 import { IData } from "../../../utils/interface";
 
-interface ProfessionalData {
-  title: string;
-  description: string;
-  duration: string;
-}
-
 interface Props {
   professionalData: IData[];
   title: string;
@@ -18,7 +12,7 @@ interface Props {
 const Professional = ({ professionalData, title }: Props) => {
   return (
     <Box px={10}>
-      <Typography variant="h5" color="initial" fontWeight="bold">
+      <Typography variant="h5" fontWeight="bold">
         {title}
       </Typography>
       <Grid container columnSpacing={10} rowSpacing={2} pt={2}>

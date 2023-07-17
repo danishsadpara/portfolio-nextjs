@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import { Box, Grid } from "@mui/material";
 import ProfessionalCard from "../../../components/elements/ProfessionalCard";
 import { IData } from "../../../utils/interface";
-import { academicData } from "./data";
 
 interface Props {
   academicData: IData[];

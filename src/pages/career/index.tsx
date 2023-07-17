@@ -1,4 +1,4 @@
-import { Box, Divider, Grid } from "@mui/material";
+import { Box, Chip, Divider, Grid } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { academicData, professionalData } from "./data";
 import Professional from "./professional";
@@ -7,25 +7,12 @@ import Academic from "./academic";
 const Career = () => {
   return (
     <Grid container spacing={5}>
-      <Grid item xs={12}>
-        <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          flexDirection="column"
-        >
-          <Typography
-            variant="body1"
-            bgcolor="#E2F4EC"
-            p={0.5}
-            borderRadius={1}
-          >
-            Career
-          </Typography>
-          <Typography variant="h3" fontWeight="bold" my={1}>
-            Education & Experience
-          </Typography>
-        </Box>
+      <Grid item xs={12} textAlign="center">
+        <Chip label="Career" />
+
+        <Typography variant="h3" fontWeight="bold" my={1}>
+          Education & Experience
+        </Typography>
       </Grid>
 
       <Grid item xs={12}>
