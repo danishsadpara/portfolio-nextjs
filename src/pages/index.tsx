@@ -8,6 +8,7 @@ import Portfolio from "./portfolio";
 import Skills from "./skills";
 import ContactUsPage from "./contactus";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import SendMessage from "./message";
 
 const Index = () => {
   const { user, isLoading } = useUser();
@@ -27,7 +28,7 @@ const Index = () => {
   };
 
   return (
-    <Box m={5}>
+    <Box mx={10}>
       <Box
         display="flex"
         justifyContent="space-around"
@@ -71,34 +72,7 @@ const Index = () => {
           />
         </Box>
       </Box>
-      <Grid container spacing={2} px={10}>
-        {[1, 2, 3].map((item) => (
-          <Grid item xs={12} sm={4} key={item}>
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              flexDirection="column"
-              py={5}
-              sx={{ borderRadius: "15px" }}
-            >
-              <Typography variant="h4" fontWeight="bold">
-                Developer
-              </Typography>
-              <Typography variant="caption">Lorem, ipsum.</Typography>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
-      <Stack textAlign="center" mt={10}>
-        <Box py={5}>
-          <Typography variant="h3" fontWeight="bold">
-            Demo
-          </Typography>
-          <Typography variant="caption">sub-demo</Typography>
-        </Box>
-      </Stack>
-      <Stack alignItems="center" mt={10}>
+      <Stack alignItems="center">
         <Career />
       </Stack>
       <Stack alignItems="center" mt={10}>
@@ -119,6 +93,9 @@ const Index = () => {
         >
           Back to the top
         </Button>
+      </Stack>
+      <Stack alignItems="flex-start" mt={10}>
+        <SendMessage />
       </Stack>
     </Box>
   );

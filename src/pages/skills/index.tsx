@@ -1,12 +1,6 @@
 import React from "react";
 import { Grid, Chip, Typography } from "@mui/material";
-
-const technologies = [
-  "/github-mark.png",
-  "/github-mark.png",
-  "/github-mark.png",
-  "/github-mark.png",
-];
+import { technologies } from "../../../utils/imagesUrl";
 
 const Skills = () => {
   return (
@@ -22,10 +16,16 @@ const Skills = () => {
           Technologies with which I mostly work
         </Typography>
       </Grid>
-      <Grid item container rowSpacing={5} justifyContent="center">
+      <Grid
+        item
+        container
+        rowSpacing={5}
+        justifyContent="center"
+        alignItems="center"
+      >
         {technologies.map((technology, index) => (
           <Grid item key={index} ml={2}>
-            <img src={technology} alt={`Technology ${index}`} width="30px" />
+            <img src={technology} alt={`Technology ${index}`} width="40px" />
           </Grid>
         ))}
       </Grid>

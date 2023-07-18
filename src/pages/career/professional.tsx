@@ -1,8 +1,8 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Grid } from "@mui/material";
-import ProfessionalCard from "../../../components/elements/ProfessionalCard";
 import { IData } from "../../../utils/interface";
+import CustomCard from "../../../components/elements/CustomCard";
 
 interface Props {
   professionalData: IData[];
@@ -18,7 +18,7 @@ const Professional = ({ professionalData, title }: Props) => {
       <Grid container columnSpacing={10} rowSpacing={2} pt={2}>
         {professionalData.map((data, index) => (
           <Grid item xs={12} sm={6} key={index}>
-            <ProfessionalCard data={data} />
+            <CustomCard data={data} />
           </Grid>
         ))}
       </Grid>
