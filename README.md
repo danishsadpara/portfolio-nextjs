@@ -1,1 +1,1 @@
-# portfolio-nextjs
+portfolio for professinal use
