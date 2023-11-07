@@ -17,13 +17,13 @@ const academicData = [
     title: "Fuuast ISB",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, possimus excepturi. Delectus officia praesentium rem?",
-    duration: "Bachlors of Computer Science",
+    degree: "Bachlors of Computer Science",
   },
   {
     title: "Midcity Educators",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, possimus excepturi. Delectus officia praesentium rem?",
-    duration: "Intermediate Computer Science",
+    degree: "Intermediate Computer Science",
   },
 ];
 export { professionalData, academicData };

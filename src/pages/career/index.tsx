@@ -18,12 +18,12 @@ const Career = () => {
       <Grid item xs={12}>
         <Professional
           professionalData={professionalData}
-          title="Professional Area"
+          heading="Professional Area"
         />
       </Grid>
 
       <Grid item xs={12}>
-        <Academic academicData={academicData} title="Academic Area" />
+        <Academic academicData={academicData} heading="Academic Area" />
       </Grid>
     </Grid>
   );

@@ -6,14 +6,14 @@ import { IData } from "../../../utils/interface";
 
 interface Props {
   academicData: IData[];
-  title: string;
+  heading: string;
 }
 
-const Academic = ({ academicData, title }: Props) => {
+const Academic = ({ academicData, heading }: Props) => {
   return (
     <Box px={10}>
       <Typography variant="h5" color="initial" fontWeight="bold">
-        {title}
+        {heading}
       </Typography>
       <Grid container columnSpacing={10} rowSpacing={2} pt={2}>
         {academicData.map((data, index) => (

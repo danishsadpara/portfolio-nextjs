@@ -15,7 +15,7 @@ const SendMessage = () => {
           </Stack>
           <Stack>
             <Typography variant="body1" color="initial">
-              Your name
+              Email Address
             </Typography>
             <TextField id="outlined-multiline-static" rows={4} size="small" />
           </Stack>
@@ -27,7 +27,7 @@ const SendMessage = () => {
           <TextField
             id="message"
             multiline
-            rows={4}
+            rows={6}
             fullWidth
             placeholder="your message here..."
           />

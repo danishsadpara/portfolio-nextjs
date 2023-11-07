@@ -1,0 +1,29 @@
+[
+  {
+    "heading": "Learning Curve 1",
+    "description": "Description 1",
+    "bulletPoints": {
+      "heading": "Dynamic Bullet Points Heading 1",
+      "points": ["Point 1", "Point 2", "Point 3"]
+    },
+    "code": "// Sample JavaScript code\nfunction greet() {\n  console.log(\"Hello, World!\");\n}"
+  },
+  {
+    "heading": "Learning Curve 2",
+    "description": "Description 2",
+    "bulletPoints": {
+      "heading": "Dynamic Bullet Points Heading 2",
+      "points": ["Point 4", "Point 5", "Point 6"]
+    },
+    "code": "// Sample JavaScript code\nfunction sayHi() {\n  console.log(\"Hi, there!\");\n}"
+  },
+  {
+    "heading": "Learning Curve 2",
+    "description": "Description 2",
+    "bulletPoints": {
+      "heading": "Dynamic Bullet Points Heading 2",
+      "points": ["Point 4", "Point 5", "Point 6"]
+    },
+    "code": "// Sample JavaScript code\nfunction sayHi() {\n  console.log(\"Hi, there!\");\n}"
+  }
+]

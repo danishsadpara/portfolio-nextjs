@@ -6,14 +6,14 @@ import CustomCard from "../../../components/elements/CustomCard";
 
 interface Props {
   professionalData: IData[];
-  title: string;
+  heading: string;
 }
 
-const Professional = ({ professionalData, title }: Props) => {
+const Professional = ({ professionalData, heading }: Props) => {
   return (
     <Box px={10}>
       <Typography variant="h5" fontWeight="bold">
-        {title}
+        {heading}
       </Typography>
       <Grid container columnSpacing={10} rowSpacing={2} pt={2}>
         {professionalData.map((data, index) => (

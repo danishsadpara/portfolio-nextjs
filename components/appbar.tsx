@@ -32,6 +32,9 @@ function ResponsiveAppBar() {
           >
             danishsadpara
           </Typography>
+          <Button component="a" href="/learningCurve" variant="outlined">
+            LEARNINGS{" "}
+          </Button>
           <Box sx={{ flexGrow: 0, marginLeft: "auto" }}>
             {user && (
               <Button

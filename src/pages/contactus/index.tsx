@@ -37,7 +37,7 @@ const ContactUsPage = () => {
         </Typography>
       </Grid>
       <Grid item mt={5}>
-        <Stack direction="row" spacing={10} alignItems="center">
+        <Stack direction="row" spacing={4} alignItems="center">
           <Button
             variant="outlined"
             sx={{

@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-import { Box, CardActions, CardContent } from "@mui/material";
+import { Box, Card, CardActions, CardContent } from "@mui/material";
 import { IData } from "../../utils/interface";
 
 interface Props {
@@ -28,30 +28,9 @@ const CustomCard = ({ data }: Props) => {
         <Typography color="text.secondary">{description}</Typography>
       </CardContent>
 
-      <CardActions>
-        {title === "Academic" && (
-          <Typography
-            variant="caption"
-            fontWeight="bold"
-            component="div"
-            color="primary"
-            ml={1}
-          >
-            {degree}
-          </Typography>
-        )}
-        {title === "Professional" && (
-          <Typography
-            variant="caption"
-            fontWeight="bold"
-            component="div"
-            color="primary"
-            ml={1}
-          >
-            {duration}
-          </Typography>
-        )}
-      </CardActions>
+      <Typography my={1} ml={2} fontWeight="bold" color="primary">
+        {degree ? degree : duration}
+      </Typography>
     </Box>
   );
 };
