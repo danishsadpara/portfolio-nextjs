@@ -9,12 +9,14 @@ import { Box } from "@mui/material";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <UserProvider>
-      <ResponsiveAppBar />
-      <Box m={10}>
-        <Component {...pageProps} />
-      </Box>
-      <Footer />
-    </UserProvider>
+    <Box bgcolor={"#F5F7F7"}>
+      <UserProvider>
+        <ResponsiveAppBar />
+        <Box m={10}>
+          <Component {...pageProps} />
+        </Box>
+        <Footer />
+      </UserProvider>
+    </Box>
   );
 }

@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import { useRouter } from "next/router";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import { GlassmorphicAppBar } from "./elements/GlassyAppBar";
+import { AppBar, Avatar } from "@mui/material";
 
 function ResponsiveAppBar() {
   const router = useRouter();
@@ -17,38 +18,42 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <GlassmorphicAppBar>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              color: "black",
-              textDecoration: "none",
-            }}
+    <AppBar>
+      <Box sx={{ flexGrow: 1 }}>
+        <Typography
+          variant="h6"
+          noWrap
+          component="a"
+          href="/"
+          sx={{
+            color: "black",
+            textDecoration: "none",
+          }}
+        >
+          <Avatar>DS</Avatar>
+        </Typography>
+      </Box>
+
+      <Button
+        component="a"
+        href="/learningCurve"
+        variant="outlined"
+        size="small"
+      >
+        LEARNINGS
+      </Button>
+      <Box>
+        {user && (
+          <Button
+            variant="outlined"
+            onClick={handleLogout}
+            sx={{ borderRadius: "50px" }}
           >
-            danishsadpara
-          </Typography>
-          <Button component="a" href="/learningCurve" variant="outlined">
-            LEARNINGS{" "}
+            Logout
           </Button>
-          <Box sx={{ flexGrow: 0, marginLeft: "auto" }}>
-            {user && (
-              <Button
-                variant="outlined"
-                onClick={handleLogout}
-                sx={{ borderRadius: "50px" }}
-              >
-                Logout
-              </Button>
-            )}
-          </Box>
-        </Toolbar>
-      </Container>
-    </GlassmorphicAppBar>
+        )}
+      </Box>
+    </AppBar>
   );
 }
 

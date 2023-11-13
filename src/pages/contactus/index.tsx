@@ -33,7 +33,7 @@ const ContactUsPage = () => {
       <Grid item xs={12}>
         <Chip label="Contact" />
         <Typography variant="h3" fontWeight="bold" my={1}>
-          Let's talk!
+          connect now
         </Typography>
       </Grid>
       <Grid item mt={5}>
